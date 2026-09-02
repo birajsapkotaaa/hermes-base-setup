@@ -1,6 +1,4 @@
-# STEA Hermes AI Agent — Setup SOP
-
-**Org:** Startup Teams | **Platform:** Discord | **Host:** Proxmox Node 135 (`MIAM-00135`)
+# STEA Hermes AI Agent — (Discord) Setup SOP
 
 The modern, standardized template for deploying individual Hermes AI agent instances for Startup Teams / STEA team members.
 
