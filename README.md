@@ -1,6 +1,6 @@
-# STEA Hermes AI Agent — (Discord) Setup SOP
+# Hermes AI Agent — (Discord) Setup SOP
 
-The modern, standardized template for deploying individual Hermes AI agent instances for Startup Teams / STEA team members.
+The modern, standardized template for deploying individual Hermes AI agent instances for Startup Teams
 
 ---
 
