@@ -1,0 +1,34 @@
+# 1. Ignore everything by default (Fail-Safe Security: prevents credential/session leaks)
+*
+
+# 2. Whitelist essential root configurations
+!.gitignore
+!README.md
+!SOUL.md
+!config.yaml
+!.env.example
+!requirements.txt
+
+# 3. Whitelist core directories
+!memories/
+!memories/**
+!skills/
+!skills/**
+!scripts/
+!scripts/**
+!templates/
+!templates/**
+
+# 4. Explicitly block sensitive artifacts even if inside whitelisted folders
+*.env
+*.env.*
+*.pem
+*.key
+*.db
+*.sqlite3
+*.lock
+*.log
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

@@ -1,0 +1,38 @@
+# Hermes AI Agent Configuration Template
+version: "1.0"
+
+agent:
+  name: "stea-hermes-agent"
+  max_turns: 30
+  temperature: 0.2
+  system_prompt_file: "SOUL.md"
+
+model:
+  default_provider: "openrouter"
+  default_model: "anthropic/claude-3.5-sonnet"
+  fallback_model: "openai/gpt-4o"
+  timeout_seconds: 60
+
+memory:
+  enabled: true
+  user_profile: "memories/USER.md"
+  working_memory: "memories/MEMORY.md"
+  auto_commit_on_update: true
+
+toolsets:
+  devops:
+    enabled: true
+    allow_shell_execution: true
+    safe_working_directory: "/opt/hermes"
+  research:
+    enabled: true
+  file_manager:
+    enabled: true
+
+platforms:
+  telegram:
+    enabled: false
+    bot_token_env: "TELEGRAM_BOT_TOKEN"
+  discord:
+    enabled: false
+    bot_token_env: "DISCORD_BOT_TOKEN"
