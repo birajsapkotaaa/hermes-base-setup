@@ -76,7 +76,7 @@ This repository serves as the persistent brain for an employee's Hermes Agent in
 To onboard a new employee, run the built-in generator script:
 
 ```bash
-python scripts/init_employee.py --name "biraj" --role "DevOps & Systems Engineer" --node "MIAM-00135"
+python scripts/init_employee.py --name "biraj" --role "AI/ML Intern"
 ```
 
 This will automatically:
