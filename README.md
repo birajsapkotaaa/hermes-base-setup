@@ -76,11 +76,11 @@ This repository serves as the persistent brain for an employee's Hermes Agent in
 To onboard a new employee, run the built-in generator script:
 
 ```bash
-python scripts/init_employee.py --name "biraj" --role "AI/ML Intern"
+python scripts/init_employee.py --name "<your_name>" --role "<your_role>"
 ```
 
 This will automatically:
-1. Create a dedicated Git branch (e.g. `biraj`).
+1. Create a dedicated Git branch with your_name.
 2. Populate `memories/USER.md` with the employee's details.
 3. Configure `SOUL.md` tailored to the employee's role.
 4. Prepare `memories/MEMORY.md` with infrastructure defaults.
