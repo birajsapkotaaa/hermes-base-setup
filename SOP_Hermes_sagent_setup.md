@@ -8,7 +8,7 @@
 - Access to Proxmox Node 135 Web GUI
 - GitHub access to `startupteams` organization
 - Discord account + access to Startup Teams server
-- Free [Groq API Key](https://console.groq.com/) (or company OpenRouter key)
+- API Keys
 
 ---
 
@@ -27,19 +27,7 @@ git push -u origin <your_name>
 
 ## Step 2: Create a Proxmox LXC Container
 
-1. Log into Proxmox Web GUI → Click **Create CT**
-2. Download template: `local` → `CT Templates` → `ubuntu-24.04-standard`
-3. Container settings:
-
-| Setting | Value |
-| :--- | :--- |
-| CT ID / Hostname | `135XX` / `hermes-<name>-agent` |
-| Template | `ubuntu-24.04-standard` |
-| Disk | 20 GB on `local-lvm` |
-| CPU / Memory | 2 Cores / 4096 MB |
-| Network | Bridge `vmbr0`, DHCP |
-
-4. Start the container and open **Console** → Login as `root`
+1. Start the container and open **Console** → Login as `root`
 
 ---
 
