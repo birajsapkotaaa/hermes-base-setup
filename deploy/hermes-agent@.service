@@ -1,0 +1,28 @@
+[Unit]
+Description=Hermes AI Agent Service for %i
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=miam
+WorkingDirectory=/opt/hermes
+EnvironmentFile=/opt/hermes/.env
+
+# Executes your root main.py with the employee profile name passed dynamically
+ExecStart=/usr/bin/python3 /opt/hermes/main.py --profile %i
+
+Restart=always
+RestartSec=5s
+
+# Security sandboxing
+NoNewPrivileges=true
+PrivateTmp=true
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=hermes-agent-%i
+
+[Install]
+WantedBy=multi-user.target
