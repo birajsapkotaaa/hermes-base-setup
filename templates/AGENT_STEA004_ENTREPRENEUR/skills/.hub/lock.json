@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "installed": {
+    "caveman": {
+      "source": "url",
+      "identifier": "https://raw.githubusercontent.com/jordatech/caveman/main/skills/caveman/SKILL.md",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:6a93e68b5d843ab6",
+      "install_path": "creative/caveman",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/jordatech/caveman/main/skills/caveman/SKILL.md",
+        "awaiting_name": false
+      },
+      "installed_at": "2026-05-14T06:50:19.905422+00:00",
+      "updated_at": "2026-05-14T06:50:19.905430+00:00"
+    }
+  }
+}

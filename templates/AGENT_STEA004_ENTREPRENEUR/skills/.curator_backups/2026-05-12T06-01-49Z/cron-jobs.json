@@ -1,0 +1,102 @@
+{
+  "jobs": [
+    {
+      "id": "187b66aee0c1",
+      "name": "Daily business idea generator - add idea",
+      "prompt": "Daily autonomous task for c01entrepreneur_bot.\n\nGoal: create exactly one new technology/SaaS-related business idea in the private GitHub repo `jordatech/business_ideas`.\n\nOperating rules:\n- Work in `/home/miam/.hermes/profiles/entrepreneur/resource_repositories/business_ideas`.\n- Before editing, verify the active branch is `c01entrepreneur_bot`; if not, check out/create `c01entrepreneur_bot`.\n- Use `HOME=/home/miam` for git/GitHub operations that need authentication.\n- Never commit secrets, API keys, tokens, cookies, or credentials.\n- Prefer persona-and-pain first, not product-first brainstorming.\n- Every generated idea must be marked draft/unvalidated unless backed by strong external evidence.\n\nSource locations to consult when useful:\n- `source_locations.md` in this repo.\n- r/AiMoneyMaking: https://www.reddit.com/r/AiMoneyMaking/\n- r/AiNova: https://www.reddit.com/r/AiNova/\n- r/AiNova analyzed passive-income thread: https://www.reddit.com/r/AiNova/comments/1rzx9zn/i_analyzed_25_ai_passive_income_ideas/\n- r/BuildCapital: https://www.reddit.com/r/BuildCapital/\n- r/CofounderHunt: https://www.reddit.com/r/CofounderHunt/\nTreat Reddit posts as opportunity signals, not validation. Look for repeated pains, current workarounds, dollars/time lost, and consequences of doing nothing. Add source URLs to the idea body/frontmatter when a specific thread materially inspired the idea.\n\nFor the new idea:\n1. Create one Markdown file under `ideas/<slug>.md` with YAML frontmatter.\n2. Include: title, slug, date, persona, pain, category, tags, status, confidence, created_by, and source URLs if applicable.\n3. Body sections must include: Persona, Pain, Product Concept, Business Model, Assumptions to Validate, Preliminary Market Research Strategy, Mom Test Interview Questions, Minimum Viable Business Product, Risks, and Next Actions.\n4. Update `ideas.json` so the Next.js viewer can consume the idea.\n5. Run lightweight validation checks such as JSON parsing and markdown/frontmatter sanity checks.\n6. Commit with a meaningful message and push to `origin/c01entrepreneur_bot`.\n\nIf no high-quality external signal is reachable, still create one high-quality persona/pain-driven SaaS idea and document assumptions explicitly.",
+      "skills": [
+        "github-repo-management",
+        "github-pr-workflow"
+      ],
+      "skill": "github-repo-management",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *",
+        "display": "0 3 * * *"
+      },
+      "schedule_display": "0 3 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 7
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-05T15:47:50.039993+00:00",
+      "next_run_at": "2026-05-13T03:00:00+00:00",
+      "last_run_at": "2026-05-12T03:03:47.672804+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8669411205",
+        "chat_name": "Jordan U",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "web"
+      ],
+      "workdir": "/home/miam/.hermes/profiles/entrepreneur/resource_repositories/business_ideas"
+    },
+    {
+      "id": "39b5b5288033",
+      "name": "Daily business idea generator - system improvement",
+      "prompt": "Daily autonomous follow-up task for c01entrepreneur_bot. This job runs after the daily business idea job. Goal: commit at least one improvement to the business_idea_generator system.\n\nContext and constraints:\n- GitHub auth is stored under real HOME=/home/miam; use HOME=/home/miam for git/gh commands.\n- Never commit secrets/API keys. Do not create or commit GitHub/Vercel tokens.\n- business_idea_generator path: /home/miam/.hermes/profiles/entrepreneur/resource_repositories/business_idea_generator\n- business_ideas path: /home/miam/.hermes/profiles/entrepreneur/resource_repositories/business_ideas\n- Before editing, check out branch c01entrepreneur_bot and pull/fetch.\n- If there is a clear improvement in docs/improvement_backlog.md, implement one small safe improvement. Otherwise add a small documented improvement or test. Prefer improvements that help the app host business model information, business assumptions, and preliminary market research strategy.\n- Run npm install/build if code changed. If build fails, fix if straightforward, otherwise document the blocker in docs/improvement_backlog.md and commit that.\n- Commit and push to origin/c01entrepreneur_bot with a conventional commit message.\n- Final response must include commit SHA, files changed, verification command, and any remaining blockers.\n\nExamples of acceptable small improvements:\n- Add idea detail routes.\n- Improve markdown rendering styles.\n- Add filters for category/status/tags.\n- Add a script to sync/copy ideas.json.\n- Add tests or documentation for Vercel env vars/private GitHub token setup.\n- Improve fallback behavior when the private business_ideas repo is unavailable.",
+      "skills": [
+        "github-repo-management",
+        "github-pr-workflow"
+      ],
+      "skill": "github-repo-management",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 3 * * *",
+        "display": "30 3 * * *"
+      },
+      "schedule_display": "30 3 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 7
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-05T15:48:00.185680+00:00",
+      "next_run_at": "2026-05-13T03:30:00+00:00",
+      "last_run_at": "2026-05-12T03:34:38.295687+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "8669411205",
+        "chat_name": "Jordan U",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": "/home/miam/.hermes/profiles/entrepreneur/resource_repositories/business_idea_generator"
+    }
+  ],
+  "updated_at": "2026-05-12T03:34:38.298249+00:00"
+}

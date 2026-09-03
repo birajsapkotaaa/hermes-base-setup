@@ -24,7 +24,7 @@ This repository serves as the persistent brain for an employee's Hermes Agent in
 │   ┌─────────────────────────────────────────────────────┐   │
 │   │         Local Employee Repository / Branch          │   │
 │   │                                                     │   │
-│   │   ├── SOUL.md          (Persona & Directives)       │   │
+│   │   ├── profiles/        (Persona & Directives)       │   │
 │   │   ├── memories/        (USER.md & MEMORY.md)        │   │
 │   │   ├── skills/          (Modular Tool Capabilities)  │   │
 │   │   └── config.yaml      (Agent & LLM Config)         │   │
@@ -36,7 +36,7 @@ This repository serves as the persistent brain for an employee's Hermes Agent in
                                ▼
                ┌──────────────────────────────┐
                │      GitHub Remote Repo      │
-               │   (Branches: main, biraj...) │
+               │   (Branches: main, daniel..) │
                └──────────────────────────────┘
 ```
 
@@ -47,12 +47,10 @@ This repository serves as the persistent brain for an employee's Hermes Agent in
 ```
 .
 ├── .gitignore                   # Strict security whitelist (blocks secrets & session DBs)
-├── .env.example                 # Example API keys template
 ├── SOP_Hermes_agent_setup.md    # This documentation
-├── SOUL.md                      # Core agent persona, tone, and directives
 ├── config.yaml                  # Hermes agent configuration (LLM models, tools, limits)
 │
-├── memories/                    # Durable Long-Term Memory Store
+├── profiles/                    # Durable Long-Term Memory Store
 │   ├── USER.md                  # Facts about the employee (role, preferences, workflow)
 │   └── MEMORY.md                # Learned environment facts, node IPs, tool quirks
 │
