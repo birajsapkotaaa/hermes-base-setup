@@ -43,7 +43,7 @@ def init_employee(
     push_remote: bool = True
 ):
     name_clean = name.strip().lower().replace(" ", "_")
-    branch_name = f"feature/{name_clean}"
+    branch_name = f"{name_clean}"
     profile_dir = root_dir / "profiles" / name_clean
     template_soul = root_dir / "templates" / template_folder / "SOUL.md"
 
