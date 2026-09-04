@@ -1,0 +1,7 @@
+# Profile Configuration for biraj
+agent:
+  name: "Biraj - AI / ML Engineer Intern Bot"
+
+telegram:
+  bot_token_env: "TELEGRAM_BOT_TOKEN_BIRAJ"
+  allowed_chat_id: 0
